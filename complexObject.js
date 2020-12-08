@@ -5,6 +5,7 @@ var juice = {
     name: "Cold Pressed Juice",
     ounces: 15.2,
     mL: 450,
+    taste: "disgusting",
     ingredients: {
         kale: "17 leaves",
         spinach: "1 pound",
@@ -32,9 +33,9 @@ var juice = {
 
 let property = prompt(`Which property?
 
-        ingredients
-        nutrition
-        
+        >> ingredients
+        >> nutrition
+        taste
         color
         temperature
         brand
