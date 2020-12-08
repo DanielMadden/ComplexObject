@@ -30,14 +30,46 @@ var juice = {
     }
 }
 
-let property = prompt("What property do you want?", "ingredients, nutrition, color, temperature, brand, name, ounces, mL")
+let property = prompt(`Which property?
+
+        ingredients
+        nutrition
+        
+        color
+        temperature
+        brand
+        name
+        ounces
+        mL
+        `, "")
 if (property == "ingredients") {
-    let ingredient = prompt("Which ingredient?", "kale, spinach, apple, cucumber, celery, lemon, ginger")
+    let ingredient = prompt(`Which ingredient?
+
+        kale
+        spinach
+        apple
+        cucumber
+        celery
+        lemon
+        ginger
+        `, "")
     let result = juice[property][ingredient]
     document.getElementById("stat").innerHTML = ingredient + ": " + result
     document.getElementById("stat").innerHTML = `${ingredient} : ${result}`
 } else if (property == "nutrition") {
-    let fact = prompt("Which nutrition fact?", "fat, cholesterol, sodium, carbohydrate, fiber, sugar, sugarAdded, protein, vitaminD, calcium, iron, potassium")
+    let fact = prompt(`        fat
+        cholesterol
+        sodium
+        carbohydrate
+        fiber
+        sugar
+        sugarAdded
+        protein
+        vitaminD
+        calcium
+        iron
+        potassium
+        `, "")
     let result = juice[property][fact]
     document.getElementById("stat").innerHTML = fact + ": " + result + " grams"
     document.getElementById("stat").innerHTML = `${fact} : ${result} grams`
